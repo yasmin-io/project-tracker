@@ -8,6 +8,8 @@ function displayTime() {
 
   $("#timer").text(dayAndTime);
 }
+
+setInterval(displayTime, 1000);
 displayTime();
 
 // handle printing project data to the page
