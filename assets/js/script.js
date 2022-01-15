@@ -3,7 +3,12 @@
 // handle displaying the time
 function displayTime() {
   // TODO (Task 1.1): Calculate and output the time to the appropriate element
+  var today = moment();
+  var dayAndTime = today.format("dddd, MMMM, Do YYYY, h:mm:ss");
+
+  $("#timer").text(dayAndTime);
 }
+displayTime();
 
 // handle printing project data to the page
 function printProjectData(name, type, hourlyRate, dueDate) {
